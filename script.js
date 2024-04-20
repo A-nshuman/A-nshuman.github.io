@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bmicalc = document.getElementById('liBMICalc');
     const Ptable = document.getElementById('liPt');
     const Currency = document.getElementById('liCurCvt');
+    const tempConvert = document.getElementById('liTempCon');
     const samaysathi = document.getElementById('liSamay');
     const timerExt = document.getElementById('liTimer');
     const timerWeb = document.getElementById('liTimerWeb');
@@ -327,6 +328,16 @@ document.addEventListener('DOMContentLoaded', () => {
         appOpen(webBrowser)
         appClose(fileExp)
         newTabOpen('https://a-currency.netlify.app/')
+    });
+    
+    tempConvert.addEventListener('click', () => {
+        tabName.innerHTML = 'Temperature Converter'
+        tabLogo.src = 'images/tempLogo.png'
+        frame.src = 'https://convert-a-temp.netlify.app/'
+        url.innerHTML = 'https://convert-a-temp.netlify.app/'
+        appOpen(webBrowser)
+        appClose(fileExp)
+        newTabOpen('https://convert-a-temp.netlify.app/')
     });
     
     timerWeb.addEventListener('click', () => {
